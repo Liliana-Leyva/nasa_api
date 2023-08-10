@@ -4,7 +4,7 @@ import webbrowser
 webbrowser.open('http://www.python.org')
 
 
-K = key
+K = your_provided_key
 
 
 url = 'https://api.nasa.gov/planetary/apod'
@@ -22,6 +22,6 @@ json_data = json.loads(response.text)
 image_url = json_data['url']
 explanation = json_data['explanation']
 title = json_data['title']
-print(explanation)
 print(title)
+print(explanation)
 webbrowser.open(image_url)
